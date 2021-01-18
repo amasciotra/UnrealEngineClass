@@ -79,8 +79,6 @@ void UBullCowCartridge::ProcessGuess(const FString& Guess)
         }   
 
         //show bulls and counts
-        int32 Bulls;
-        int32 Cows;
         FBullCowCount Count = GetBullCows(Guess);
         PrintLine(TEXT("You have %i Bulls and %i Cows"), Count.Bulls, Count.Cows);
 
